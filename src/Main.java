@@ -16,8 +16,10 @@ public class Main {
             System.out.println("No se puede llevar el bulto2");
         }
 
-        Bulto bultosMudanza[] = new Bulto[]{bulto1,bulto2};
+        Bulto[] bultosMudanza = new Bulto[]{bulto1,bulto2};
 
         Mudanza mudanza = new Mudanza(11, 100, camion, bultosMudanza);
+        System.out.println("El coste de la mudanza es: "+mudanza.calcularCoste());
+
     }
 }
